@@ -1,0 +1,219 @@
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top left, #0f172a, #1e293b, #0f172a);
+  color: #f8fafc;
+  margin: 0;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /* Smooth transition for theme */
+  transition: background 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+/* Subtle animated gradient effect */
+body::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #0f172a, #1e293b, #0f172a, #1e293b);
+  animation: rotateBG 20s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotateBG {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Modern Button Styling */
+.styled-btn {
+  margin-top: 25px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: #fff;
+  padding: 14px 40px;
+  border-radius: 14px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+
+  /* Effects */
+  box-shadow: 0 6px 20px rgba(59, 130, 246, 0.45);
+  transition: all 0.3s ease, box-shadow 0.4s ease;
+}
+
+/* Hover effects */
+.styled-btn:hover {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.6);
+}
+
+/* Click effect */
+.styled-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+
+/* Container for quiz */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Card (quiz box) */
+.card {
+  background: #1e293b;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Question text */
+.card h2 {
+  margin-bottom: 20px;
+  color: #e2e8f0;
+}
+
+/* Options grid */
+.options {
+  display: grid;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.option {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #334155;
+  color: rgb(243, 242, 242);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  background: #475569;
+  transform: scale(1.02);
+}
+
+.option.selected {
+  background: #22c55e;
+}
+
+/* Progress bar */
+.progress-bar {
+  background: #334155;
+  border-radius: 10px;
+  height: 10px;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.fill {
+  background: #22c55e;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+/* Review list */
+.review li {
+  text-align: left;
+  margin: 10px 0;
+  color: #cbd5e1;
+}
+
+/* Next Button (separate from card) */
+.next-btn {
+  margin-top: 15px;
+  background: #3b82f6;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+.next-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+}
+
+/* Simple fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* FRONT Start Quiz Button */
+.start-btn {
+  margin-top: 25px;
+  padding: 16px 50px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  letter-spacing: 1px;
+
+  /* Gradient Background */
+  background: linear-gradient(135deg, #3b82f6, #2563eb, #1d4ed8);
+  background-size: 300% 300%;
+
+  /* Glow effect */
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.6),
+              0 0 40px rgba(59, 130, 246, 0.4);
+
+  /* Animations */
+  transition: all 0.4s ease;
+  animation: glowPulse 3s infinite alternate, gradientShift 6s infinite linear;
+}
+
+/* Hover effect */
+.start-btn:hover {
+  transform: translateY(-4px) scale(1.08);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.9),
+              0 0 60px rgba(59, 130, 246, 0.6);
+}
+
+/* Click effect */
+.start-btn:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.6);
+}
+
+/* Glow pulsing animation */
+@keyframes glowPulse {
+  from { box-shadow: 0 0 15px rgba(59, 130, 246, 0.5),
+                   0 0 30px rgba(59, 130, 246, 0.3); }
+  to   { box-shadow: 0 0 30px rgba(59, 130, 246, 0.9),
+                   0 0 60px rgba(59, 130, 246, 0.6); }
+}
+
+/* Gradient shifting animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
