@@ -1,7 +1,7 @@
 # React + Vite
 
 Live Demo  
-[Click here to view the deployed project](http://localhost:5173/)
+[Click here to view the deployed project]( https://adityapratap-12.github.io/Quiz-app/)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
