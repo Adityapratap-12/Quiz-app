@@ -1,15 +1,35 @@
-# React + Vite
+#  Quiz App
 
-Live Demo  
-[Click here to view the deployed project]( https://adityapratap-12.github.io/Quiz-app/)
+A simple **Quiz Application** built with **React + Vite**.  
+It provides multiple-choice questions on various computer science topics, with different levels of difficulty.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##  Live Demo
+👉 [Click here to play](https://adityapratap-12.github.io/Quiz-app/)
 
-Currently, two official plugins are available:
+##  Project Structure
+Quiz-app/
+- public/  (Static assets)
+- src/  (React source code)
+  - components/  (Reusable UI components)
+  - pages/  (Page components)
+  - App.jsx  (Main app entry)
+- index.html  (HTML template)
+- package.json  (Dependencies and scripts)
+- vite.config.js  (Vite configuration)
+- README.md  (Documentation)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ 
+##  Features
+- Multiple-choice quiz questions   
+- Different difficulty levels  
+- Score tracking system  
+- Instant feedback on answers  
+- Responsive UI for desktop & mobile  
 
-## Expanding the ESLint configuration
+##  Technologies Used
+- **React (Vite)** – Frontend framework  
+- **JavaScript (ES6+)** – Logic  
+- **CSS3** – Styling  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+ 
